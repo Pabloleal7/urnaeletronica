@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Urna</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" th:href="@{/main.css}"/>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img
+                        th:src="@{/cetep.jpg}"
+
+                        alt=""
+                        width="60"
+                        height="48"
+                />
+            </a>
+            <p class="title-nav">Votação para Líder e Vice Líder de Classe</p>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <div class="content menu">
+        <div class="row">
+            <a href="/cadastrarturma">
+                <button type="button" class="btn btn-primary">Cadastrar Turma</button>
+            </a>
+        </div>
+        <div class="row">
+            <a href="/cadastrarchapa">
+                <button type="button" class="btn btn-primary">Cadastrar Chapa</button>
+            </a>
+        </div>
+        <div class="row">
+            <a href="/listarturmas">
+                <button type="button" class="btn btn-primary">Listar Turma</button>
+            </a>
+        </div>
+        <div class="row">
+            <a href="/iniciarvotacao">
+                <button type="button" class="btn btn-success">Iniciar Votação</button>
+            </a>
+        </div>
+        <div class="row">
+            <a href="/resultados">
+                <button type="button" class="btn btn-secondary">Resultados</button>
+            </a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" th:src="@{/main.js}"></script>
+</body>
+</html>
+
+
